@@ -1,0 +1,96 @@
+digraph {
+
+  # Information
+
+  q [
+    shape="diamond",
+    label="Do you care?
+    about me?"
+  ]
+  q -> info[label="yes"]
+  q -> end[label="no"]
+
+  info [
+    shape="rect",
+    label="Cool, check out some links:
+    1. No-brainer social networking:
+    Facebook,
+    Twitter,
+    and Instagram.
+    2. Open sourcing all
+    my non-confidential
+    work on Github.
+    3. Hyperlinking and
+    researching on Arena.
+    4. I record process n’
+    sketches n’ more on Tumblr."
+  ]
+
+  end [
+    shape="egg",
+    label="See ya."
+  ]
+
+  # Introduction
+
+  edouard [
+    shape="circle",
+    label="Édouard U."
+  ]
+  edouard -> role
+
+  role [
+    shape="diamond",
+    label="Physical–digital product designer,
+    né industrial designer."
+  ]
+  role -> currently[label="currently"]
+  role -> based_in[label="based in"]
+  role -> previously[label="previously"]
+
+  currently [
+    shape="oval",
+    color="#529ECC",
+    label="At Tumblr building a dazzling array of
+    digital products for millions of creative people."
+  ]
+  currently -> mornings[label="and"]
+  currently -> public_services[label="and"]
+
+  mornings [
+    shape="box",
+    color="#e65a2d",
+    label="Tending to my experimental
+    personal–projects–lab, Mornings.
+    (Open for biz)"
+  ]
+  public_services [
+    shape="box",
+    color="#76c865",
+    label="Self-organizing creative events and
+    schooling at Public Services
+    with some good friends."
+  ]
+
+  previously [
+    shape="box",
+    label="I was at
+    International Business Machines
+    building many things. Ask about it."
+  ]
+
+  based_in [
+    shape="box",
+    label="New York, New York"
+  ]
+
+  role -> thanks[label="cool"]
+  currently -> thanks
+  mornings -> thanks
+  public_services -> thanks
+
+  thanks [
+    shape="box",
+    label="Thanks for visiting and stay a while. If you want, send me a letter or tweet at me."
+  ]
+}
